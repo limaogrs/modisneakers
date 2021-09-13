@@ -1,0 +1,401 @@
+*{
+    padding:0;
+    margin: 0;
+}
+body{background-color: #f3f3f3;}
+header{width: 100%;}
+.bg{
+  background-image: url(../fundoheader.png);
+  background-repeat: no-repeat;
+  background-size:100%;
+  width: 100%;
+  height:1050px;
+  margin-top: -530px;
+}
+.bg h1{
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5341a6;
+    margin-left: 100px;
+    width: 40%;
+}
+.img-header{
+    margin-top: 200px;
+    margin-left: 50%;
+}
+@media(max-width:480px){
+  header{height:700px;}
+  .bg{background-size: 100%;margin-top:-50px;}
+  .bg h1{
+    margin-top: -20px;
+    margin-left:8px;
+    width: 90%;
+  }
+  .img-header{margin-top: 40px;}
+  .img-header img{width:250px;margin-left:-130px;}
+}
+.antemenu{
+  width:100%;
+  height:100px;
+  background-color: #f5f9fa;
+}
+.antemenu a{
+  font-family: Arial;
+  font-size: 13.5px;
+  color:#82e4ca;
+  text-decoration: none;
+  padding-left: 15px;
+  }
+.antemenu a:hover {
+  opacity:0.5;
+}
+.antemenu i {padding-left:15px;}
+
+@media(max-width:480px){
+  .antemenu a{padding:5px;}
+  .antemenu i {padding-left:5px;}
+
+  }
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #f3f3f3;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #82e4ca;
+  font-family: Arial;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover{opacity:0.5;}
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: #82e4ca;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 20px;
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover{
+  background-color: #5341a6;
+  border-radius: 20px;
+  opacity:1;
+}
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+h3{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color:#0D0D10;
+  margin-left: 45px;
+}
+ @media(max-width:480px){
+     .cards-home h3{
+       margin-left:100px ;
+     }
+     .box-produtos{margin-left:5%;}
+   }
+.container-produtos{
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 0.3fr));
+    grid-gap:20px;
+}
+.box-produtos{
+    background-color:#f5f9fa;
+    box-shadow:3px 10px 10px 3px rgba(0,0,0,0.2);
+    width:230px;
+    height:300px;
+    border-radius: 20px;
+    position:relative;
+    transition: box-shadow .3s;
+    margin-left: 7%;
+}
+.box-produtos:hover{
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+.box-produtos img{
+    width: 180px;
+    height: 150px;
+    margin-left: 25px;
+    margin-top: 15px;
+    border: solid 1px #f5f9fa;
+    border-radius: 20px;
+}
+.box-produtos h4{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color:#82e4ca;
+  padding-left: 45px;
+}
+#p-prom{
+  font-family: Arial;
+  font-size: 13.5px;
+  color:#a64157;
+}
+.box-produtos p{
+  font-family:'Arial';
+  font-size: 20px;
+  color:rgba(0, 0, 0, 0.692);
+  font-weight: bold;
+  padding-left: 65px;
+  padding-top: 3px;
+}
+.box-produtos button{
+  width: 130px;
+  height:35px;
+  background-color:#5341a6;
+  border-style: none;
+  border-radius: 5px;
+  color:#f5f9fa;
+  margin-left:50px;
+  margin-top: 15px;
+  }
+.box-produtos button:hover{
+  opacity: 0.8;
+}
+.garantias{
+  width: 100%;
+  height:250px;
+  background-color: #dfd9d986;
+}
+@media(max-width:480px){
+  .garantias{
+    height:450px;
+    }
+  .div-gar{padding-left:50px;}
+  }
+.container-gar{
+  width: 95%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 0.3fr));
+    grid-gap:20px;
+}
+
+.div-gar{
+  margin-left: 45px;
+  margin-top: 60px;
+}
+.div-gar p{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0.692);
+  font-size: 15px;
+  padding: 5px;
+  width:85%;
+  }
+.div-gar i{font-size: 30px;color:rgba(0,0,0,0.2);}
+.div-gar i,p{display: inline-block;}
+footer{
+  margin-top:100px;
+  background-color: #dfd9d986;
+  width: 100%;
+}
+@media(max-width:480px){
+  footer{margin-top: 100px;}
+}
+footer h3{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.692);
+  margin-left: 45px;
+}
+footer p{
+  font-family:Arial;
+  font-size:15px;
+  color:rgba(0, 0, 0, 0.692);
+}
+footer i{padding:5px;margin-left:45px;}
+footer img{
+  margin-left:45px;height:30px;
+}
+.div-news .input-mail{
+  width: 200px;
+  height: 35px;
+  background-color: #f3f3f3;
+  margin-left: 45px;
+  border-radius: 5px;
+  border-style: none;
+}
+.div-news button{
+  width: 130px;
+  width: 130px;
+  height:35px;
+  background-color:#5341a6;
+  border-style: none;
+  border-radius: 5px;
+  color:#f5f9fa;
+ }
+.div-news button:hover{opacity: 0.8;}
+.final{width: 100%;height:50px;background-color:#82e4ca;}
+@media(max-width:480px){
+  footer h3{margin-left: 15px;}
+  footer i{margin-left:15px;}
+  footer img{margin-left: 15px;}
+  .div-news .input-mail{margin-left: 15px;}
+}
+/*Login/Registrar-Modi Sneakers*/
+.box-login{
+  width: 500px;
+  height: 350px;
+  background-color: #f5f9fa;
+  box-shadow:0px 5px 5px 0px rgba(0,0,0,0.2);
+  }
+.box-login p a{font-family: Arial, Helvetica, sans-serif;color:#0D0D10;font-size: 13.3px;text-decoration: none;}
+
+form{margin-top: 25%;}
+.input-wrapper {
+  position:  relative;
+  margin: 20px auto;
+  z-index:0;
+  }
+#submit{
+  width: 100px;
+  height:30px;
+  background-color: #5341a6;
+  border-style:none ;
+  border-radius: 5px;
+  color:#f5f9fa;
+}
+#submit:hover{opacity:0.8;}
+.form-control {
+  display: block;
+  line-height: 2em;
+  margin: 0;
+  padding-left: 10px;
+  width: 250px;
+  height: 40px;
+  font-size: medium;
+  font-family: 'Arial';
+  color:#0D0D10;
+  border: 2px solid #82e4ca;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-weight: 500;
+  outline:none;
+  }
+.form-control:focus {
+  border: 2px solid white;
+}
+.control-label {
+  display: block;
+  position: absolute;
+  opacity: 0;
+  bottom: 1.9rem;
+  color: #82e4ca;
+  transition: 0.2s ease-in-out transform;
+  font-size: 15px;
+  font-family: 'Zilla Slab';
+  margin-left: 25%;
+}
+.form-control:placeholder-shown + .control-label {
+  visibility: hidden;
+  z-index: -1;
+  transition: 0.2s ease-in-out;
+}
+
+.form-control:not(:placeholder-shown) + .control-label,
+.form-control:focus:not(:placeholder-shown) + .control-label {
+  visibility: visible;
+  z-index: 1;
+  opacity: 1;
+  transform: translateY(-10px);
+  transition: 0.2s ease-in-out transform;
+}
+.form-control:placeholder-shown + .control-label {
+  visibility: hidden;
+  z-index: -1;
+  transition: 0.2s ease-in-out;
+}
+@media(max-width:480px){
+  .box-login{width:90%;}
+  .control-label{margin-left:13%;}
+}
